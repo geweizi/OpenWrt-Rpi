@@ -8,19 +8,19 @@
 
 name: Build x86_64 Project OpenWrt
 
-on:
-  repository_dispatch:
-  release:
-    types: published
-  push:
-    branches:
+#on:
+#  repository_dispatch:
+ # release:
+  #  types: published
+  #push:
+   # branches:
       - master
-    paths:
+    #paths:
       - 'config/project/x86_64-project-openwrt.config'
-  schedule:
+  #schedule:
     - cron: 0 18 * * *
-  watch:
-    types: started
+  #watch:
+   # types: started
 
 env:
   REPO_URL: https://github.com/project-openwrt/openwrt
